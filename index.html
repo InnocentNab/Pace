@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body>
+    <div class="sticky top-0 left-0 w-full z-50" id="header">
+    </div>
+    <main>
+        <div class="relative h-[100vh] bg-contain bg-[url(images/background/backgroundd.jpg)]">
+            <div class="md:absolute md:top-[50px] absolute top-[30px] left-[20px] md:left-[200px]  w-[400px]">
+                <div>
+                    <h1 class="text-[#FFFDD0] text-[30px] my-[25px]">
+                        NEW RELEASE
+                    </h1>
+                    <h1 class="text-[#FFFDD0] font-semibold text-[90px] my-[-15px]">
+                        PACE
+                    </h1>
+                    <h1 class="text-[#FFFDD0] font-semibold text-[90px]">
+                        SHOP ON
+                    </h1>
+                    <p class="text-[#FFFDD0] text-[20px] my-[25px]">
+                        Get to know the latest phones and devices with super performance, smooth and lightweight feel and
+                        strong batteries with 10 hours stay-on.
+                    </p>
+                    <button
+                        class="text-[#FFFDD0] text-[20px] font-semibold bg-#FFFDD0] border-[#FFFDD0] border py-[20px] h-[20px] px-[35px] flex items-center hover:text-black hover:bg-white ">
+                        SHOP
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-[80px] relative">
+
+            <!-- <h1 class="flex justify-center text-[18px] font-sans">MUST HAVE</h1> -->
+
+            <div class="flex gap-2 justify-center items-center">
+                <span class="font-bold text-[48px]">BEST</span> <span
+                    class="font-semibold font-sans text-[40px] italic">DEVICES</span>
+            </div>
+        </div>
+
+        <div class="flex md:flex md:flex-col md:items-center md:justify-center md:px-5">
+            <label for="" class="font-bold">Filter by</label><br>
+            <form action="">
+                <select name="All" id="select" class="border-2 h-[40px] px-4" onchange="selectChangeHandler()">
+                    <option value="" class="font-bold"><a href="">All</a></option>
+                    <option value="" class="font-bold"><a href="">Phones</a></option>
+                    <option value="" class="font-bold"><a href="">Laptop</a></option>
+                    <option value="" class="font-bold"><a href="">Tablet</a></option>
+                    <option value="" class="font-bold"><a href="">Power_Bank</a></option>
+                    <option value="" class="font-bold"><a href="">Tv</a></option>
+                </select>
+            </form>
+        </div>
+
+        <div class="flex justify-center items-center flex-col">
+            <div class="flex justify-center lg:px-[38px] py-[20px] gap-[30px] flex-wrap" id="bestdevices">
+               
+            </div>
+            <div class="flex justify-center pb-[50px]">
+                <button
+                    class=" border-2 border-black hover:bg-black hover:text-white flex items-center text-black px-[30px] py-[10px] font-bold">SHOP
+                    BEST DEVICE</button>
+            </div>
+
+            <div>
+
+            </div>
+
+            <h1 class="flex justify-center items-center font-bold text-[25px]"> PHONES</h1>
+            <div class="w-full overflow-auto">
+                <div class="w-[3000px] flex flex-col">
+                    <div class=" flex  my-[10px]" id="phones">
+                      
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="flex justify-center w-[120px] h-[40px] items-center font-bold text-[25px]">LAPTOPS</h1>
+            <div class="w-full overflow-auto">
+                <div class="w-[3000px] flex flex-col">
+
+                    <div class="flex" id="laptop">
+                      
+                    </div>
+                </div>
+            </div>
+
+
+            <h1 class="flex justify-center w-[250px] h-[35px] items-center font-bold text-[25px]">POWER - BANKS</h1>
+            <div class="w-full overflow-auto">
+                <div class="w-[3000px] flex flex-col">
+                    <div class="flex" id="powerbank">
+                       
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="flex justify-center w-[250px] h-[35px] items-center font-bold text-[25px]">TV</h1>
+            <div class="w-full overflow-auto">
+                <div class="w-[3000px] flex flex-col">
+                    <div class="flex" id="tv">
+                        
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="flex justify-center w-[250px] h-[35px] items-center font-bold text-[25px]">TABLETS</h1>
+            <div class="w-full overflow-auto">
+                <div class="w-[3000px] flex flex-col">
+                    <div class="flex" id="Tablet">
+                       
+                    </div>
+                </div>
+            </div>
+     <br><br><br><br>
+    <div id="footer" class="w-full bg-black text-white"></div>
+    </main>
+
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
+
